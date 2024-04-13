@@ -1,9 +1,15 @@
 .nav-bar {
-  background-color: rgb(110, 151, 151);
+  background-color: rgb(154, 169, 169);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 72px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .nav-bar ul {
   color: white;
@@ -43,7 +49,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(50px); /* Adjust as needed */
+    transform: translateX(50px); 
   }
 }
 
@@ -56,12 +62,11 @@
   }
 }
 
-/* Apply the animation to your text element */
 .text {
-  overflow: hidden; /* Ensures the text doesn't overflow */
-  border-right: 0px solid black; /* Creates a blinking cursor effect */
-  white-space: nowrap; /* Keeps the text on one line */
-  animation: typing 3s steps(40) infinite; /* Adjust the duration and steps as needed */
+  overflow: hidden;
+  border-right: 0px solid black; 
+  white-space: nowrap; 
+  animation: typing 3s steps(40) infinite;
 }
 
 .image-block1 {
@@ -116,7 +121,8 @@
 #education-section {
   display: flex;
 }
-#education-section,#skills {
+#education-section,
+#skills {
   display: flex;
   padding-left: 270px;
   margin-top: 40px;
@@ -155,12 +161,11 @@
   }
 }
 
-/* Apply the animation to your text element */
 .text1 {
-  overflow: hidden; /* Ensures the text doesn't overflow */
-  border-right: 0px solid black; /* Creates a blinking cursor effect */
-  white-space: nowrap; /* Keeps the text on one line */
-  animation: typing 3s steps(40) infinite; /* Adjust the duration and steps as needed */
+  overflow: hidden;
+  border-right: 0px solid black;
+  white-space: nowrap;
+  animation: typing 3s steps(40) infinite;
 }
 #achievements {
   margin-top: 60px;
@@ -175,7 +180,6 @@
   margin-top: 50px;
   background-color: #5569dc1a;
   padding-bottom: 70px;
-  padding-left: 240px;
 }
 #footer button {
   background-color: rgb(50, 96, 96);
@@ -187,17 +191,6 @@
 }
 #footer a {
   color: black;
-}
-
-body {
-  background-color: #f8f9fa;
-  color: #495057;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #343a40;
-  color: #ced4da;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1023px) {
